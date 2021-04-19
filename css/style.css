@@ -1,0 +1,779 @@
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    border: 5px outset black;
+
+}
+
+
+.grid-container .grid-item {
+    width: 100%;
+    background-color: #293241;
+    padding:3%;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.grid-container .grid-item .question-button{
+    width: 100%;
+    font-size: 5rem;
+    background-color: #3D5A80;
+    border: 3px outset  #EEE;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.grid-container .grid-item .question-button-1{
+    width: 100%;
+    font-size: 5rem;
+    background-color: #e0fbfc;
+    border: 3px outset  #EEE;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container .grid-item .question-button-2{
+    width: 100%;
+    font-size: 5rem;
+    background-color: #98C1D9;
+    border: 3px outset  #EEE;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.grid-container .grid-item .points{
+    display: flex;
+    width: 100%;
+    font-size: 5rem;
+    background-color: #EE6C4D;
+    border: 3px solid  #EEE;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container .grid-item .question-button-1:hover{
+    background-color: #F3C969;
+    border: 3px inset  #EEE;
+    color: #C880B7;
+}
+
+.grid-container .grid-item .question-button-2:hover{
+    background-color: #F3C969;
+    border: 3px inset  #EEE;
+    color: #C880B7;
+}
+
+.grid-container .grid-item .question-button:hover{
+    background-color: #F3C969;
+    border: 3px inset  #EEE;
+    color: #C880B7;
+}
+
+
+.modal_container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.3s ease;
+    height: 100%;
+  }
+
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+.modal {
+    background-color: #fff;
+    width: 90%;
+    padding: 30px 50px;
+    border-radius: 55px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 90%;
+  }
+
+.modal .participant_points_time{
+    width: 160px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    bottom: 50px;
+    right:100px;
+}
+
+
+.checkbox{
+    width: 40px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 280px;
+    background-color: #293241;
+    border: 5px outset black;
+  }
+
+
+footer .participants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+
+footer .participant-1{
+    width: 19%;
+    height: 260px;
+    background-color: #f1faee ;
+
+}
+
+.participant-1 .draw{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.participant-1 .draw .name{
+    margin-top:5px;
+    font-size: 25px;
+}
+
+.participant-1 .draw .face{
+    /* width: 40%;
+    height: 120px;
+    /* background-color: green;
+    border-radius: 50%; 
+    margin-top:0px; */
+    font-size: 90px;
+}
+
+
+.participant-1 .draw .left_eye{
+    width: 20%;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top:25%;
+}
+
+.participant-1 .draw .right_eye{
+    width: 20%;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 55%;
+    margin-top:-20%;
+}
+
+.participant-1 .draw .face .pupil_left{
+    width: 12%;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 28.5%;
+    margin-top: -15%;
+}
+
+.participant-1 .draw .face .pupil_right{
+    width: 12%;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 59%;
+    margin-top: -15%;
+}
+
+.participant-1 .draw .face .mouth{
+    width: 50px;
+    height: 30px;
+    border-radius: 5% 5% 50% 50%;
+    background-color: violet;
+    margin-left: 28%;
+    margin-top: 15% ;
+}
+
+.participant-1 .score{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.participant-1 .score .display_score span{
+    width: 30%;
+    height: 100px;
+    background-color: #EE6C4D;
+    font-size: 85px;
+    margin-right: 5px;
+}
+
+
+.participant-1 .score .control_score{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.participant-1 .score .control_score button{
+    width: 25px;
+    height: 30px;
+    background-color: tomato;
+    font-size: 25px;
+}
+
+.modal .timer{
+position: absolute;
+left:8%;
+top:82%;
+font-size: 300%;
+}
+
+.modal .time_chart{
+    font-size: 300%;
+    position: absolute;
+    left:6%;
+    top:73%;
+}
+
+.modal .points{
+    position: absolute;
+    left:15%;
+    top:82%;
+    font-size: 300%;
+}
+
+.modal .points_chart{
+    position: absolute;
+    left:15%;
+    top:73%;
+    font-size: 300%;
+
+}
+
+.modal .button_close{
+    position: absolute;
+    bottom: 50px;
+    background-color: #98C1D9;
+    font-size: 20px;
+    left: 750px;
+}
+
+.start_timer{
+    background-color: #98C1D9;
+    font-size: 20px;
+    position: absolute;
+    bottom: 80px;
+    left: 730px;
+}
+
+#rubric_content_1{
+    position: absolute;
+    left: 85px;
+    top:200px;
+    text-align: justify;
+    font-size: 25px;
+    
+} 
+
+#rubric_title_1{
+    position: absolute;
+    left: 175px;
+    top: 150px;
+}
+
+#rubric_title_12{
+    position: absolute;
+    left: 170px;
+    top: 110px;
+}
+
+#rubric_content_12{
+    position: absolute;
+    left: 85px;
+    top:135px;
+    text-align: justify;
+    font-size: 18px;
+    
+} 
+
+#video_12{
+    position: absolute;
+    left: 310px;
+}
+
+#text_12{
+    position: absolute;
+    left: 870px;
+    font-size: 17px;
+    text-align: left;
+
+}
+
+#rubric_title_8{
+    position: absolute;
+    left: 170px;
+    top: 130px;
+}
+
+#rubric_content_8{
+    position: absolute;
+    left: 85px;
+    top:155px;
+    text-align: justify;
+    font-size: 18px;
+    
+} 
+
+#video_8{
+    position: absolute;
+    left: 340px;
+
+}
+
+#text_8{
+    position: absolute;
+    left: 1050px;
+    font-size: 25px;
+    text-align: left;
+
+}
+
+#rubric_title_5{
+    position: absolute;
+    left: 150px;
+    top: 130px;
+}
+
+#rubric_content_5{
+    position: absolute;
+    left: 85px;
+    top:155px;
+    text-align: justify;
+    font-size: 18px;
+    
+} 
+
+#text_5{
+    position: absolute;
+    left: 300px;
+    top:120px;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+#reference_8{
+    position: absolute;
+    left: 400px;
+    top:460px;
+    text-align: justify;
+    font-size: 20px;
+
+
+}
+
+#rubric_title_2{
+    position: absolute;
+    left: 150px;
+    top: 130px;
+} 
+
+#rubric_content_2{
+    position: absolute;
+    left: 85px;
+    top:155px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#list_of_2{
+    font-size: 30px;
+}
+
+#text_2
+{
+    position: absolute;
+    left: 700px;
+    top:150px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#ans_2{
+    position: absolute;
+    left: 575px;
+    top: 500px;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+#audio_container_7{
+    margin-left: 500px;
+    width: 100px;
+    height: 100px;
+
+}
+
+#text_container_7{
+    margin-top: -40px;
+    margin-left: 200px;
+    width: 85%;
+    text-align: justify;
+    font-size: 23px;
+}
+
+#release_question_7{
+    font-size: 22px;
+    background-color: turquoise;
+}
+
+#rel_container_7{
+    margin-left: 100px;
+}
+
+#rubric_title_7{
+    position: absolute;
+    left: 150px;
+    top: 130px;
+}
+
+#rubric_content_7{
+    position: absolute;
+    left: 85px;
+    top:155px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#img_9{
+    width: 700px;
+    height: 450px;
+}
+
+#rubric_title_9{
+    position: absolute;
+    left: 120px;
+    top: 130px;
+}
+
+#rubric_content_9{
+    position: absolute;
+    left: 90px;
+    top: 160px;
+    text-align: left;
+}
+
+#img_3_1{
+    position: absolute;
+    left:400px;
+    height: 480px;
+    width: 400px;
+    border: black 5px solid;
+}
+
+#chart_place_1{
+    position: absolute;
+    left:570px;
+    top: 590px;
+    font-size: 25px;
+}
+
+#img_3_2{
+    position: absolute;
+    left:820px;
+    height: 350px;
+    width: 600px;
+    border: black 5px solid;
+}
+
+#chart_place_2{
+    position: absolute;
+    left:1000px;
+    top: 460px;
+    font-size: 25px;
+}
+
+#rubric_title_3{
+    position: absolute;
+    left: 200px;
+    top: 130px;
+}
+
+#rubric_content_3{
+    position: absolute;
+    left: 90px;
+    top: 160px;
+    text-align: left;
+}
+
+#text_container_11{
+    text-align: justify;
+    font-size: 17px;
+    margin-left: 80px;
+
+}
+
+#questions_11{
+    margin-left: 300px;
+    text-align: justify;
+    margin-top: -15px;
+    font-size: 17px;
+} 
+
+#direction_11{
+    margin-top:-31px;
+}
+
+#rubric_title_11{
+    position: absolute;
+    left: 105px;
+    top: 130px;
+}
+
+#rubric_content_11{
+    position: absolute;
+    left: 90px;
+    top: 160px;
+    text-align: left;
+}
+
+#img_4_1{
+    position: absolute;
+    left: 230px;
+}
+
+#img_4_2{
+    position: absolute;
+    left: 840px;
+}
+
+#rubric_title_4{
+    position: absolute;
+    left: 115px;
+    top: 130px;
+}
+
+#rubric_content_4{
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    text-align: left;
+}
+
+ #text_13{
+    text-align: justify;
+    font-size: 23.5px;
+    margin-left: 80px;
+} 
+
+#rubric_title_13{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+}
+
+#rubric_content_13{
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    text-align: left;
+}
+
+#questions_13{
+    text-align: justify;
+    margin-left: 270px;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+#rubric_content_14{
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    text-align: left;
+}
+
+
+#questions_14{
+    text-align: justify;
+    margin-left: 270px;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+#text_14{
+    text-align: justify;
+    font-size: 23.5px;
+    margin-left: 80px;
+} 
+
+#rubric_title_14{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+} 
+
+
+
+#rubric_title_15{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+} 
+
+#rubric_content_15{
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    text-align: left;
+}
+
+#img_15{
+    width: 700px;
+    height: 450px;
+}
+
+#questions_15{
+    font-size: 20px;
+}
+
+#rubric_title_6{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+} 
+
+#rubric_content_6{
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    text-align: left;
+}
+
+#winner{
+    margin-top: 30px;
+    margin-left: 700px;
+    background-color: #F3C969;
+    font-size: 25px;
+}
+
+.frame{
+    width: 1270px;
+    height: 620px;
+    border: #0081a7 85px ridge;
+    background-color: #fdfcdc;
+    color: #4B244A;
+    box-shadow: 0 0px 15px 15px #0080a78c; 
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+
+#line_decoration_1{
+    background-color: black;
+    height: 5px;
+    width: 230px;
+    margin-top: -30px;
+    margin-left: 315px;
+    background-color: #4B244A;
+}
+
+#dec_container{
+    margin-top: -450px;
+    margin-right: 20px;
+
+}
+
+#dec_element{
+    width: 150px;
+    height: 50px;
+
+}
+
+#line_decoration_2{
+    background-color: black;
+    height: 5px;
+    width: 230px;
+    margin-top: -5px;
+    margin-left: 720px;
+    background-color: #4B244A;
+    
+}
+
+#text_container_19_1{
+    margin-top: 25px;
+    margin-top: 50px;
+}
+
+#text_certificate_1{
+    font-size: 25px;
+    font-style: italic;
+    color: #4B244A;
+    margin-top: -20px;
+
+}
+
+#name_winner{
+    font-size: 75px;
+    color: #4B244A;
+}
+
+#medal{
+    height: 130px;
+    width: 130px;
+}
+
+#text_container_19_2{
+    margin-top: 25px;
+}
+
+#close_16{
+    margin-top: 150px;
+}
+
+#close_17{
+    margin-top: 150px;
+}
+
+#close_18{
+    margin-top: 150px;
+}
+
+#close_19{
+    position: absolute;
+    top:695px;
+    background-color: #98C1D9;
+}
