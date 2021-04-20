@@ -424,18 +424,17 @@ font-size: 300%;
 
 #text_2
 {
-    position: absolute;
+    margin-left: 42%;
+    /* position: absolute;
     left: 45%;
-    top:20%;
-    font-size: 25px;
+    top:20%; */
+    font-size: 150%;
     text-align: left;
 }
 
 #ans_2{
-    position: absolute;
-    left: 35%;
-    top: 65%;
-    font-size: 25px;
+
+    font-size: 150%;
     text-align: left;
 }
 
@@ -785,3 +784,19 @@ font-size: 300%;
     right: 64%;
     text-align: justify;
 }
+
+#container_answer_2
+{
+    margin-left: 35%;
+    left: 35%;
+}
+
+#direction_2
+{
+    font-size: 2rem;
+}
+
+.modal_2{
+    display: flex;
+}
+
