@@ -120,17 +120,20 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    position: absolute;
-    bottom: 7.5%;
-    right:6.5%;
+    margin-left:80%;
+    margin-top:-2%;
 }
 
 
 .checkbox{
-    width: 40px;
-    height: 25px;
-    margin-bottom: 5px;
+    width: 25px;
+    height: 100%;
+    margin-bottom: 5%;
+    font-size: 100%;
+    margin-left: 50%;
 }
+
+
 
 
 
