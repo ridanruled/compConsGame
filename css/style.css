@@ -406,14 +406,14 @@ font-size: 300%;
 
 #rubric_title_2{
     position: absolute;
-    left: 150px;
+    left: 8.2%;
     top: 130px;
 } 
 
 #rubric_content_2{
     position: absolute;
-    left: 85px;
-    top:155px;
+    left: 5.5%;
+    top:22%;
     text-align: justify;
     font-size: 18px;
 }
@@ -425,16 +425,16 @@ font-size: 300%;
 #text_2
 {
     position: absolute;
-    left: 700px;
-    top:150px;
+    left: 45%;
+    top:20%;
     font-size: 25px;
     text-align: left;
 }
 
 #ans_2{
     position: absolute;
-    left: 575px;
-    top: 500px;
+    left: 35%;
+    top: 65%;
     font-size: 25px;
     text-align: left;
 }
