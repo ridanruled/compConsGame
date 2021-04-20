@@ -298,18 +298,18 @@ font-size: 300%;
     left: 48.2%;
 }
 
-#rubric_content_1{
+/* #rubric_content_1{
     position: absolute;
     left: 85px;
     top:200px;
     text-align: justify;
     font-size: 25px;
     
-} 
+}  */
 
 #rubric_title_1{
     position: absolute;
-    left: 11.39%;
+    left: 10%;
     top: 19%;
 }
 
@@ -776,4 +776,12 @@ font-size: 300%;
     position: absolute;
     top:695px;
     background-color: #98C1D9;
+}
+
+.container_rubric_text{
+    width: 30%;
+    position: absolute;
+    top:25%;
+    right: 64%;
+    text-align: justify;
 }
